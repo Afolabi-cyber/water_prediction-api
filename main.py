@@ -8,7 +8,7 @@ app = FastAPI(
     description = 'Predicting water portability'
 )
 
-with open('C:/Users/user/Documents/DVC/model.pkl', 'rb') as file:
+with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 @app.get("/")
